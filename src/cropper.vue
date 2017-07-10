@@ -171,6 +171,9 @@
           hasImage: () => {
             return !!this.img
           },
+          getImageData: ()=> {
+            return this.imgData;
+          },
           reset: () => {
             console.warn('"reset()" method will be deprecated in the near future due to misnaming. Please use "remove()" instead. They have the same effect.')
             this.remove()
