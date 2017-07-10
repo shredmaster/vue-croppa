@@ -171,8 +171,11 @@
           hasImage: () => {
             return !!this.img
           },
-          getImageData: ()=> {
-            return this.imgData;
+          getImg: () => {
+            return this.img
+          },
+          getImgData: () => {
+            return this.imgData
           },
           reset: () => {
             console.warn('"reset()" method will be deprecated in the near future due to misnaming. Please use "remove()" instead. They have the same effect.')
@@ -333,7 +336,6 @@
       imgContentInit () {
         this.imgData.startX = 0
         this.imgData.startY = 0
-        this.imgData.originImg = this.img
         let imgWidth = this.img.naturalWidth
         let imgHeight = this.img.naturalHeight
         let imgRatio = imgHeight / imgWidth

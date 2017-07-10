@@ -389,7 +389,10 @@ var cropper = { render: function render() {
         hasImage: function hasImage() {
           return !!_this.img;
         },
-        getImageData: function getImageData() {
+        getImg: function getImg() {
+          return _this.img;
+        },
+        getImgData: function getImgData() {
           return _this.imgData;
         },
         reset: function reset() {
@@ -547,7 +550,6 @@ var cropper = { render: function render() {
     imgContentInit: function imgContentInit() {
       this.imgData.startX = 0;
       this.imgData.startY = 0;
-      this.imgData.originImg = this.img;
       var imgWidth = this.img.naturalWidth;
       var imgHeight = this.img.naturalHeight;
       var imgRatio = imgHeight / imgWidth;
