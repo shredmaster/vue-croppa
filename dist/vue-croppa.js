@@ -389,6 +389,9 @@ var cropper = { render: function render() {
         hasImage: function hasImage() {
           return !!_this.img;
         },
+        getImageData: function getImageData() {
+          return _this.imgData;
+        },
         reset: function reset() {
           console.warn('"reset()" method will be deprecated in the near future due to misnaming. Please use "remove()" instead. They have the same effect.');
           _this.remove();
