@@ -333,6 +333,7 @@
       imgContentInit () {
         this.imgData.startX = 0
         this.imgData.startY = 0
+        this.imgData.originImg = this.img
         let imgWidth = this.img.naturalWidth
         let imgHeight = this.img.naturalHeight
         let imgRatio = imgHeight / imgWidth
